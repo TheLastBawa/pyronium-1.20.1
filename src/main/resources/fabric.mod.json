@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pyronium",
+	"version": "${version}",
+	"name": "Pyronium",
+	"description": "Sleek, lightweight weapons forged by utilizing a fiery alloy.",
+	"authors": [
+		"The_Last_Bawa"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/pyronium/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.the_last_bawa.pyronium.Pyronium"
+		],
+		"client": [
+			"net.the_last_bawa.pyronium.PyroniumClient"
+		],
+		"fabric-datagen": [
+			"net.the_last_bawa.pyronium.PyroniumDataGenerator"
+		]
+	},
+	"mixins": [
+		"pyronium.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
