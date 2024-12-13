@@ -14,10 +14,12 @@ import net.the_last_bawa.pyronium.Pyronium;
 public class ModItems
 {
     public static final Item PYRONIUM_INGOT = registerItem("pyronium_ingot", new Item(new FabricItemSettings()));
+    public static final Item PYRONITE_CRYSTAL = registerItem("pyronite_crystal", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries)
     {
         entries.add(PYRONIUM_INGOT);
+        entries.add(PYRONITE_CRYSTAL);
     }
 
     private static Item registerItem(String name, Item item)
