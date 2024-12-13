@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "material",
+  "ingredients":
+          [
+            {
+              "item": "pyronium:pyronite_crystal"
+            },
+            {
+              "item": "minecraft:copper_ingot"
+            },
+            {
+              "item": "minecraft:copper_ingot"
+            },
+            {
+              "item": "minecraft:copper_ingot"
+            },
+            {
+              "item": "minecraft:copper_ingot"
+            },
+            {
+              "item": "minecraft:gold_ingot"
+            },
+            {
+              "item": "minecraft:gold_ingot"
+            },
+            {
+              "item": "minecraft:gold_ingot"
+            },
+            {
+              "item": "minecraft:gold_ingot"
+            }
+          ],
+  "result":
+  {
+    "item": "pyronium:pyronium_ingot"
+  }
+}

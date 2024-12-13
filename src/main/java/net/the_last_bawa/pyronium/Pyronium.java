@@ -2,6 +2,7 @@ package net.the_last_bawa.pyronium;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.the_last_bawa.pyronium.block.ModBlocks;
 import net.the_last_bawa.pyronium.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +16,7 @@ public class Pyronium implements ModInitializer {
 	{
 
 		ModItems.registerModItems();
-
+		ModBlocks.registerModBlocks();
 
 	}
 }

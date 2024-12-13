@@ -10,6 +10,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.the_last_bawa.pyronium.Pyronium;
+import net.the_last_bawa.pyronium.block.ModBlocks;
 
 public class ModItems
 {
@@ -18,8 +19,13 @@ public class ModItems
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries)
     {
-        entries.add(PYRONIUM_INGOT);
-        entries.add(PYRONITE_CRYSTAL);
+        entries.add(ModItems.PYRONIUM_INGOT);
+        entries.add(ModItems.PYRONITE_CRYSTAL);
+    }
+
+    private static void addItemsToBuildingBlocksItemGroup(FabricItemGroupEntries entries)
+    {
+        entries.add(ModBlocks.PYRONIUM_BLOCK);
     }
 
     private static Item registerItem(String name, Item item)
@@ -32,5 +38,6 @@ public class ModItems
         Pyronium.LOGGER.info("Registering Mod Items for " + Pyronium.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModItems::addItemsToBuildingBlocksItemGroup);
     }
 }

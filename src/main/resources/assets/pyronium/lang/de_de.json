@@ -1,4 +1,6 @@
 {
   "item.pyronium.pyronium_ingot": "Pyroniumbarren",
-  "item.pyronium.pyronite_crystal": "Pyroniumkristall"
+  "item.pyronium.pyronite_crystal": "Pyronitkristall",
+
+  "block.pyronium.pyronium_block": "Pyroniumblock"
 }
