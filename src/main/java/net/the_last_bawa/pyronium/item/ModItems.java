@@ -15,7 +15,7 @@ import net.the_last_bawa.pyronium.block.ModBlocks;
 public class ModItems
 {
     public static final Item PYRONIUM_INGOT = registerItem("pyronium_ingot", new Item(new FabricItemSettings()));
-    public static final Item PYRONITE_CRYSTAL = registerItem("pyronite_crystal", new Item(new FabricItemSettings()));
+    public static final Item PYRONITE_CRYSTAL = registerItem("pyronite_crystal", new Item(new FabricItemSettings().fireproof()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries)
     {
@@ -26,6 +26,13 @@ public class ModItems
     private static void addItemsToBuildingBlocksItemGroup(FabricItemGroupEntries entries)
     {
         entries.add(ModBlocks.PYRONIUM_BLOCK);
+    }
+
+    private static void addItemsToNaturalItemGroup(FabricItemGroupEntries entries)
+    {
+        entries.add(ModBlocks.PYRONITE_ORE);
+        entries.add(ModBlocks.DEEPSLATE_PYRONITE_ORE);
+        entries.add(ModBlocks.NETHER_PYRONITE_ORE);
     }
 
     private static Item registerItem(String name, Item item)
@@ -39,5 +46,6 @@ public class ModItems
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModItems::addItemsToBuildingBlocksItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItems::addItemsToNaturalItemGroup);
     }
 }

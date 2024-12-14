@@ -2,5 +2,9 @@
   "item.pyronium.pyronium_ingot": "Pyroniumbarren",
   "item.pyronium.pyronite_crystal": "Pyronitkristall",
 
-  "block.pyronium.pyronium_block": "Pyroniumblock"
+  "block.pyronium.pyronium_block": "Pyroniumblock",
+
+  "block.pyronium.pyronite_ore": "Pyroniterz",
+  "block.pyronium.deepslate_pyronite_ore": "Tiefenschiefer-Pyroniterz",
+  "block.pyronium.nether_pyronite_ore": "Netherpyroniterz"
 }

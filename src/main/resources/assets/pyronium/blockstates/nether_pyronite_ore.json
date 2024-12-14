@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "":
+    {
+      "model": "pyronium:block/nether_pyronite_ore"
+    }
+  }
+}

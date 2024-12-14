@@ -2,5 +2,9 @@
   "item.pyronium.pyronium_ingot": "Pyronium Ingot",
   "item.pyronium.pyronite_crystal": "Pyronite Crystal",
 
-  "block.pyronium.pyronium_block": "Block of Pyronium"
+  "block.pyronium.pyronium_block": "Block of Pyronium",
+
+  "block.pyronium.pyronite_ore": "Pyronite Ore",
+  "block.pyronium.deepslate_pyronite_ore": "Deepslate Pyronite Ore",
+  "block.pyronium.nether_pyronite_ore": "Nether Pyronite Ore"
 }
