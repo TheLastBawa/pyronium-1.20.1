@@ -37,8 +37,8 @@ public class ModConfiguredFeatures
         List<OreFeatureConfig.Target> netherPyroniteOres =
                 List.of(OreFeatureConfig.createTarget(netherReplacables, ModBlocks.NETHER_PYRONITE_ORE.getDefaultState()));
 
-        register(context, PYRONITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldPyroniteOres, 2));
-        register(context, NETHER_PYRONITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherPyroniteOres, 2));
+        register(context, PYRONITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldPyroniteOres, 5));
+        register(context, NETHER_PYRONITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherPyroniteOres, 5));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name)

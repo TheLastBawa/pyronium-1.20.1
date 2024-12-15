@@ -25,12 +25,12 @@ public class ModPlacedFeatures
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, PYRONITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PYRONITE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(24, //Veins per Chunk
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(100))));
+                ModOrePlacement.modifiersWithCount(60, //Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
 
         register(context, NETHER_PYRONITE_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.NETHER_PYRONITE_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(24, //Veins per Chunk
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(100))));
+                ModOrePlacement.modifiersWithCount(60, //Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(118))));
     }
 
 public static RegistryKey<PlacedFeature> registerKey(String name)
